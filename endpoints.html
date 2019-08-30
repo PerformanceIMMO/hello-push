@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set the viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set character encoding -->
+    <meta charset="utf-8">
+    <!-- Include manifest -->
+    <!-- Set title -->
+    <title>Endpoints</title>
+
+</head>
+
+<body>
+
+<h1>Endpoints</h1>
+
+<ul id="endpoints">
+</ul>
+
+<section>
+    <label for="payload">Notif message</label><input type="text" name="payload" id="payload" value="hello world">
+</section>
+<button id="js-endpoints">Refresh endpoints</button>
+<button id="js-notify">Notify them</button>
+
+<script type="text/template" id="endpoint_row">
+    <li class="row">
+        <input type="checkbox" value="%value%" id="%value%">
+        <label for="%value%">%value%</label>
+    </li>
+</script>
+
+<!-- Include script -->
+<script src="js/endpoints.js"></script>
+
+</body>
+</html>
